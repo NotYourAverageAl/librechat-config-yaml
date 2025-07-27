@@ -23,6 +23,17 @@ endpoints:
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
+    - name: "llama-swap"
+      apiKey: "user_provided"
+      baseURL: "http://192.168.0.3:65000/v1"
+      models:
+        default:
+          - Qwen3-30B-A3B
+        fetch: true
+      titleConvo: true
+      titleModel: "current_model"
+      modelDisplayLabel: "llama-swap"
+      
     - name: "APIpie"
       apiKey: "user_provided"
       baseURL: "https://apipie.ai/v1/"
